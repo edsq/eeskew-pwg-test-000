@@ -1,3 +1,5 @@
+import cowsay
+
 def sarcasm(s):
     """Convert string `s` to sArCaSm TeXt."""
     out = ""
@@ -9,3 +11,8 @@ def sarcasm(s):
             out += c.upper()
 
     return out
+
+def sarcastic_cowsay(s):
+    """Cowsay `s`, sArCaStIcAlLy."""
+    sarcastic_s = sarcasm(s)
+    cowsay.cow(sarcastic_s)
